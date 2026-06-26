@@ -1155,3 +1155,119 @@ h3 {
     padding: 26px;
   }
 }
+
+/* -----------------------------
+   Resources Section
+------------------------------ */
+.student-resources-section {
+  padding: 95px 0 80px;
+  background: #faf9f6;
+}
+
+.resource-heading {
+  display: grid;
+  grid-template-columns: minmax(120px, 1fr) auto minmax(120px, 1fr);
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 58px;
+}
+
+.resource-heading span {
+  border-top: 4px dotted #171515;
+}
+
+.resource-heading h2 {
+  margin: 0;
+  color: #171515;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-weight: 700;
+  text-align: center;
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 42px 42px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.resource-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 128px;
+  padding: 24px 30px;
+  border: 4px solid #25211f;
+  border-radius: 999px;
+  background: #d3c9bb;
+  color: #151313;
+  font-size: clamp(1.05rem, 1.5vw, 1.4rem);
+  font-weight: 500;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.resource-button span {
+  margin-left: 10px;
+  font-size: 1.4em;
+  line-height: 1;
+}
+
+.resource-button:hover {
+  background: #c4b7a5;
+  transform: translateY(-4px);
+}
+
+.resources-disclaimer {
+  max-width: 1180px;
+  margin: 72px auto 0;
+  color: #292322;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.05rem, 1.7vw, 1.45rem);
+  font-style: italic;
+  line-height: 1.45;
+  text-align: center;
+}
+
+@media (max-width: 980px) {
+  .resource-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px;
+  }
+}
+
+@media (max-width: 640px) {
+  .student-resources-section {
+    padding: 70px 0 60px;
+  }
+
+  .resource-heading {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 38px;
+  }
+
+  .resource-heading span {
+    display: none;
+  }
+
+  .resource-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .resource-button {
+    min-height: 92px;
+    padding: 20px 24px;
+  }
+
+  .resources-disclaimer {
+    margin-top: 48px;
+  }
+}
