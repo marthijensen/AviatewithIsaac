@@ -30,6 +30,17 @@ body {
   font-family: "DM Sans", Arial, sans-serif;
   line-height: 1.6;
 }
+.brand {
+  display: inline-flex;
+  align-items: center;
+  max-width: 190px;
+}
+
+.brand-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 body.menu-open {
   overflow: hidden;
