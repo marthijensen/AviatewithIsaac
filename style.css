@@ -571,7 +571,7 @@ h3 {
 
 .process-section {
   padding: 120px 0;
-  background: var(--soft-blue);
+  background: var(--cream);
 }
 
 .process-grid {
@@ -609,7 +609,7 @@ h3 {
 .process-step h3 {
   margin-bottom: 7px;
   color: var(--navy);
-  font-size: 1.27rem;
+  font-size: 1.2rem;
 }
 
 .process-step p {
